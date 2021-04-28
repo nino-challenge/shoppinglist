@@ -1,18 +1,52 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>買い物リスト</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="container">
-    <input type="text" placeholder="買う物を入力してね" id="text-input">
-    <ul id="shopping-list"></ul>
-  </div>
+html{
+  font-size: 18px;
+}
 
-  <script src="main.js"></script>
-</body>
-</html>
+body {
+  background-color: rgb(247, 221, 225);
+}
+
+#container {
+  width: 400px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+#text-input{
+  width: 90%;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border: 2px solid pink
+}
+
+#shopping-list {
+  width: 87%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color:#333;
+}
+
+.delete-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:rgb(233, 64, 93);
+}
+
+.delete-button:hover {
+  opacity: 0.7;
+}
