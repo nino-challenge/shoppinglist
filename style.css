@@ -30,6 +30,7 @@ body {
 
 input:focus{
   outline: none;
+}
 
 #shopping-list {
   width: 78%;
