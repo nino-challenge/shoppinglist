@@ -28,6 +28,9 @@ body {
   border: 2px solid pink
 }
 
+input:focus{
+  outline: none;
+
 #shopping-list {
   width: 78%;
   margin: 0 auto;
