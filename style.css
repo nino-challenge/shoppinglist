@@ -28,7 +28,7 @@ body {
   border: 2px solid pink
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
