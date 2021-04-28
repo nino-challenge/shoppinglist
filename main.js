@@ -18,7 +18,7 @@ textInput.addEventListener("keydown", e => {
     span.textContent = text;
     span.classList.add("shopping-text");
 
-    button.textContent = "OK";
+    button.textContent = "";
     button.type = "button";
     button.classList.add("delete-button");
     button.addEventListener("click", e=> {
