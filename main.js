@@ -6,7 +6,7 @@ const shoppingList = document.querySelector("#shopping-list");
 textInput.addEventListener("keydown", e => {
   const text = textInput.value.trim();
 
-    if( text === "" || e.key !== "Enter") {
+    if( text === "" || e.keyCode !== 13 ) { //13はENTERキー
       return;
     };
 
