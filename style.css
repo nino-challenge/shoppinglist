@@ -1,3 +1,8 @@
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+}
+
 html{
   font-size: 18px;
 }
@@ -13,38 +18,46 @@ body {
 }
 
 #text-input{
-  width: 90%;
+  width: 85%;
   height: 50px;
   box-sizing: border-box;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-left: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 8px;
   border: 2px solid pink
 }
 
 #shopping-list {
-  width: 87%;
+  width: 80%;
   margin: 0 auto;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .list-item {
-  list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color:#333;
 }
+
 
 .delete-button {
   border: none;
   outline: none;
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color:rgb(233, 64, 93);
+}
+
+.delete-button::before {
+  font-family: "Font Awesome 5 free";
+  font-weight: 700;
+  content: "\f07a";
+  color: #333;
+  margin-right: 5px;
 }
 
 .delete-button:hover {
